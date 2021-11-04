@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only --exit-child src/index.ts",
+    "db-push": "prisma db push --skip-generate",
+    "generate": "prisma generate"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/node": "^16.11.6",
+    "prettier": "^2.4.1",
+    "prisma": "^3.3.0",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@giraphql/core": "^2.16.0",
+    "@graphql-ez/fastify": "^0.9.4",
+    "@graphql-ez/plugin-altair": "^0.9.4",
+    "@graphql-ez/plugin-codegen": "^0.7.5",
+    "@graphql-ez/plugin-schema": "^0.8.1",
+    "@prisma/client": "^3.3.0",
+    "fastify": "^3.22.1",
+    "graphql": "^16.0.1",
+    "graphql-ez": "^0.13.3"
+  }
+}
